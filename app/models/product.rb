@@ -14,4 +14,6 @@
 class Product < ActiveRecord::Base
 
   mount_uploader :product_photo, ProductPhotoUploader
+
+
 end
