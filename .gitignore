@@ -38,3 +38,9 @@
 .idea/modules.xml
 
 .idea/runConfigurations/Development__TheHatGame.xml
+
+test/fixtures/products.yml
+
+test/fixtures/users.yml
+
+.idea/.rakeTasks
