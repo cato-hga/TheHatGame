@@ -15,3 +15,15 @@
 /log/*
 !/log/.keep
 /tmp
+
+*.xml
+
+.idea/.generators
+
+.idea/.rakeTasks
+
+.idea/TheHatGame.iml
+
+test/fixtures/products.yml
+
+test/fixtures/users.yml
