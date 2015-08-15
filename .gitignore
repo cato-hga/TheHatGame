@@ -16,6 +16,7 @@
 !/log/.keep
 /tmp
 
+<<<<<<< HEAD
 .idea/.generators
 
 .idea/.name
@@ -38,9 +39,21 @@
 .idea/modules.xml
 
 .idea/runConfigurations/Development__TheHatGame.xml
+=======
+*.xml
+
+.idea/.generators
+
+.idea/.rakeTasks
+
+.idea/TheHatGame.iml
+>>>>>>> master
 
 test/fixtures/products.yml
 
 test/fixtures/users.yml
+<<<<<<< HEAD
 
 .idea/.rakeTasks
+=======
+>>>>>>> master
