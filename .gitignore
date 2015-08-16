@@ -16,44 +16,13 @@
 !/log/.keep
 /tmp
 
-<<<<<<< HEAD
 .idea/.generators
 
 .idea/.name
 
+.idea/.rakeTasks
+
 *.xml
 
 
-.idea/TheHatGame.iml
-
-.idea/vcs.xml
-
-.idea/runConfigurations/test__TheHatGame.xml
-
-.idea/runConfigurations/spec__TheHatGame.xml
-
-.idea/runConfigurations/Production__TheHatGame.xml
-
-.idea/misc.xml
-
-.idea/modules.xml
-
-.idea/runConfigurations/Development__TheHatGame.xml
-=======
-*.xml
-
-.idea/.generators
-
-.idea/.rakeTasks
-
-.idea/TheHatGame.iml
->>>>>>> master
-
-test/fixtures/products.yml
-
-test/fixtures/users.yml
-<<<<<<< HEAD
-
-.idea/.rakeTasks
-=======
->>>>>>> master
+.env

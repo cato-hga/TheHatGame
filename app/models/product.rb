@@ -12,6 +12,8 @@
 #
 
 class Product < ActiveRecord::Base
-
+  attr_accessor :product_photo, :product_photo_cache
   mount_uploader :product_photo, ProductPhotoUploader
+
+
 end
