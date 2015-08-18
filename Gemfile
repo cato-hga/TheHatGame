@@ -55,6 +55,9 @@ gem 'mini_magick'
 gem 'fog'
 # for fast webserver & pushing to heroku
 gem 'thin'
+# for Heroku database adapter
+gem 'pg'
+
 
 
 
