@@ -12,6 +12,25 @@
   <% end %>
 
   <div class="actions">
+    <%= f.label :photo	  %>
+    <%=	image_tag(@product.product_photo.url) if @product.product_photo?  %>
+    <%= f.file_field :product_photo %>
+    <%= f.hidden_field :product_photo_cache %>
+  </div>
+    <div class="field">
+      <%= f.label :description %><br>
+      <%= f.text_field :description %>
+    </div>
+    <div class="field">
+      <label>Item # </label><br>
+      <%= f.text_field :id %>
+    </div>
+    <div class="field">
+      <%= f.label :price %><br>
+      <%= f.number_field :price %>
+    </div>
+
+  <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
