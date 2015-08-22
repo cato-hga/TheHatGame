@@ -16,15 +16,14 @@
 !/log/.keep
 /tmp
 
-.idea/.generators
-
-.idea/.name
-
-.idea/.rakeTasks
+*.idea
 
 *.xml
 
+*.iml
+
+Gemfile.lock
+
+Gemfile
 
 .env
-
-.idea/TheHatGame.iml
