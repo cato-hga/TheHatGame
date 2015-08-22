@@ -56,7 +56,8 @@ end
 gem 'carrierwave'
 gem 'mini_magick'
 # for amazon S3
-gem 'fog'
+# gem 'fog'
+gem 'carrierwave-aws'
 # for fast webserver & pushing to heroku
 gem 'thin'
 # for Heroku database adapter

@@ -4,12 +4,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-8">
-      <%= image_tag @product.photo.url(:show)%>
+      <%= image_tag @product.product_photo.url(:thumb)%>
     </div>
 
     <div class="col-md-4">
       <p>  <%= @product.id  %> </p>
       <p> <%= @product.description %></p>
+      <p> <%= @product.price %> </p>
     </div>
   </div>
 </div>
