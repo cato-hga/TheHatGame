@@ -1,4 +1,19 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <%= image_tag @product.product_photo.url(:thumb)%>
+    </div>
+
+    <div class="col-md-4">
+      <p>  <%= @product.id  %> </p>
+      <p> <%= @product.description %></p>
+      <p> <%= @product.price %> </p>
+    </div>
+  </div>
+</div>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
