@@ -1,4 +1,4 @@
-class SessionsController < ActionController::Base
+class SessionsController < ActionController
   # before_action :authenticate_session!
 
   def index
