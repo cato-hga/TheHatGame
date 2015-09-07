@@ -1,6 +1,10 @@
 
 body {
     padding-bottom: 70px;
+    /*background: rgba(125, 125, 125, 0.98);*/
+}
+
+.index {
     background: rgba(125, 125, 125, 0.98);
 }
 
