@@ -8,29 +8,35 @@
 </head>
 
 <body class="index">
-<div class="row">
-  <div class="col-xs-6 col-sm-4">
-    <a href="#" class="product-grid-image">
-      <img src="https://s3-us-west-2.amazonaws.com/thehatgame/uploads/item/photo/2/show_10832272_1567081693505167_222862675_n.jpg" alt="Made in Ohio">
-    </a>
+<% @product.shuffle.each_slice(4) do |product_row| %>
+    <div class="row">
+      <% product_row.each do |product| %>
 
-    <div class="label">
-      <div class="price">
-        $28
-      </div><div class="title">
-      <a class="description" href="#"> MADE IN OHIO</a>
-    </div>
+          <div class="col-xs-6 col-sm-4">
+            <a href="#" class="product-grid-image">
+              <%= link_to image_tag(product.product_photo.url(:home)), product_path(@product) %>
 
-    </div>
-  </div>
+            </a>
 
-  <div>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <div class="label">
+              <div class="price">
+                $<%= product.price %>
+              </div><div class="title">
+              <a class="description" href="#"> <%= product.description %></a>
+            </div>
 
-  </div>
+            </div>
+          </div>
 
-</body>
+          <div>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+          </div>
+      <% end %>
+
+    </body>
+
+<% end %>
 
 </html>
