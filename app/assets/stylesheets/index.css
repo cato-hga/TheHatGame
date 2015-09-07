@@ -1,0 +1,61 @@
+
+body {
+    padding-bottom: 70px;
+    background: rgba(125, 125, 125, 0.98);
+}
+
+.navbar navbar-default navbar-fixed-top {
+    padding-bottom: 70px;
+}
+
+.description {
+    color: white;
+}
+
+.label {
+    position: relative;
+    top: -6.5em;
+    color: white !important;
+    white-space: nowrap;
+    font-family: "IndustryInc-Base","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.label .price {
+    font-size: 110%;
+    padding: 13px;
+    background-color: #142c2d;
+    border-radius: 3px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 56px;
+}
+
+.label .title {
+    display: inline-block;
+    background-color: rgba(20,44,45,0.5);
+    padding: 8px 3px;
+}
+
+.product-grid-image img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+/*@import "index.css";*/
+
+body {
+    padding-bottom: 70px;  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.logo {
+    width: 12%;
+}
+
+
+
+
+
+
+
+
+
+
+
