@@ -1,11 +1,11 @@
 
 body {
     padding-bottom: 70px;
-    /*background: rgba(125, 125, 125, 0.98);*/
+    /*background-color: #e2e1df;*/
 }
 
 .index {
-    background: rgba(125, 125, 125, 0.98);
+    /*background-color: #e2e1df;*/
 }
 
 .navbar navbar-default navbar-fixed-top {
@@ -47,8 +47,15 @@ body {
     width: 100%;
 }
 
+.grid-item {
+    float: left;
+    padding-left: 24px;
+    vertical-align: top;
+}
 
-
+.carousel {
+    padding-bottom: 20px;
+}
 
 
 

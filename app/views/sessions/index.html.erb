@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="main">
 <head>
   <!-- Bootstrap Core CSS -->
   <!--<link href="../../assets/stylesheets/bootstrap.min.css" rel="stylesheet">-->
@@ -7,36 +7,84 @@
 
 </head>
 
-<body class="index">
-<% @product.shuffle.each_slice(4) do |product_row| %>
-    <div class="row">
-      <% product_row.each do |product| %>
 
-          <div class="col-xs-6 col-sm-4">
-            <a href="#" class="product-grid-image">
-              <%= link_to image_tag(product.product_photo.url(:home)), product_path(@product) %>
+<body>
+<div>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
 
-            </a>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="http://placehold.it/1200x315" alt="...">
+        <div class="carousel-caption">
+          <h3>Caption Text</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img src="http://placehold.it/1200x315" alt="...">
+        <div class="carousel-caption">
+          <h3>Caption Text</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img src="http://placehold.it/1200x315" alt="...">
+        <div class="carousel-caption">
+          <h3>Caption Text</h3>
+        </div>
+      </div>
+    </div>
 
-            <div class="label">
-              <div class="price">
-                $<%= product.price %>
-              </div><div class="title">
-              <a class="description" href="#"> <%= product.description %></a>
-            </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div> <!-- Carousel -->
+</div>
+<div>
 
-            </div>
-          </div>
+  <!--<div class="col-md-12">-->
+  <div>
 
-          <div>
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <% @product.each_slice(4) do |product_row| %>
+        <div class="row">
+          <% product_row.each do |product| %>
+              <div class="col-sm-4 col-lg-3 col-md-4">
+                <div class="product-grid-image">
 
-          </div>
-      <% end %>
+                  <%= link_to image_tag(product.product_photo.url(:home)), product %>
 
-    </body>
+                  <div class="label">
+                    <div class="price">
+                      $<%= product.price %>
+                    </div><div class="title">
+                    <a class="description" href="#"> <%= product.description %></a>
+                  </div>
+                    <!--link_to (item.description), item-->
+                  </div>
+                </div>
+              </div>
+          <% end %>
+        </div>
+    <% end %>
+  </div>
+</body>
 
-<% end %>
 
+
+<div>
+  <!-- Latest compiled and minified JavaScript -->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+
+
+</div>
 </html>
