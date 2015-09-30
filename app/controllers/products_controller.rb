@@ -5,6 +5,9 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+
+    @instagram = ::Instagram.user_recent_media(496631234, {:count => 3})
+
   end
 
   # GET /products/1

@@ -62,7 +62,8 @@ gem 'thin'
 # for Heroku database adapter
 gem 'pg'
 
-
+# instagram
+gem 'instagram'
 
 
 
