@@ -29,7 +29,7 @@ body {
 }
 
 
-.navbar-default {
+.navbar {
     background-color: #040404;
     border-color: #000000;
 }
@@ -42,7 +42,7 @@ body {
 .navbar-default .navbar-text {
     color: #ab0000;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar .collapse > ul > li > a {
     color: #ab0000;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {

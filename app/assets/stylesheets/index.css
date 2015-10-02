@@ -17,19 +17,20 @@ body {
 }
 
 .label {
+    font-size: 85% !important;
     position: relative;
-    top: -6.5em;
+    top: -1.5em;
     color: white !important;
     white-space: nowrap;
     font-family: "IndustryInc-Base","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-
+    padding: 0px 0px !important;
 }
 
 .label .price {
-    font-size: 110%;
+    font-size: 110% ;
     padding: 13px;
     background-color: #142c2d;
-    border-radius: 3px;
+    border-radius: 7px;
     z-index: 1;
     display: inline-block;
     text-align: center;
@@ -57,9 +58,14 @@ body {
     padding-bottom: 20px;
 }
 
+.thumbnail {
+    padding: 0px;
+    border: 0px solid #FFF;
+}
 
-
-
+.title > a {
+    color: white;
+}
 
 
 
