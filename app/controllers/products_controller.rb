@@ -5,11 +5,15 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+
+    @instagram = ::Instagram.user_recent_media(496631234, {:count => 3})
+
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+    @product = Product.find_by(params[:id])
   end
 
   # GET /products/new
@@ -69,6 +73,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:price, :product_photo, :description, :photo, :product_number, :id, :product_photo, :product_photo_cache, {product_photo: []} )
+      params.require(:product).permit(:price, :product_photo, :description, :photo, :product_number, :product_photo, :product_photo_cache, {product_photo: []} )
     end
 end
