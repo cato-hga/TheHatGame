@@ -1,0 +1,78 @@
+
+body {
+    padding-bottom: 70px;
+    /*background-color: #e2e1df;*/
+}
+
+.index {
+    /*background-color: #e2e1df;*/
+}
+
+.navbar navbar-default navbar-fixed-top {
+    padding-bottom: 70px;
+}
+
+.description {
+    color: white;
+}
+
+.label {
+    font-size: 85% !important;
+    position: relative;
+    top: -1.5em;
+    color: white !important;
+    white-space: nowrap;
+    font-family: "IndustryInc-Base","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0px 0px !important;
+}
+
+.label .price {
+    font-size: 110% ;
+    padding: 13px;
+    background-color: #142c2d;
+    border-radius: 7px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 56px;
+}
+
+.label .title {
+    display: inline-block;
+    background-color: rgba(20,44,45,0.5);
+    padding: 8px 3px;
+}
+
+.product-grid-image img {
+    width: 100%;
+}
+
+.grid-item {
+    float: left;
+    padding-left: 24px;
+    vertical-align: top;
+}
+
+.carousel {
+    padding-bottom: 20px;
+}
+
+.thumbnail {
+    padding: 0px;
+    border: 0px solid #FFF;
+}
+
+.title > a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+

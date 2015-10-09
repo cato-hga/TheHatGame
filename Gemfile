@@ -34,7 +34,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
-  gem 'devise'
 
   gem 'annotate', '~> 2.6.6'
   # Use sqlite3 as the database for Active Record
@@ -54,6 +53,7 @@ group :development, :test do
 
 end
 
+ gem 'devise'
 # uploader
 gem 'carrierwave'
 gem 'mini_magick'
@@ -65,7 +65,8 @@ gem 'thin'
 # for Heroku database adapter
 gem 'pg'
 
-
+# instagram
+gem 'instagram'
 
 
 
