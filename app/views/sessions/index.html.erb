@@ -3,6 +3,8 @@
 <head>
   <!-- Bootstrap Core CSS -->
   <!--<link href="../../assets/stylesheets/bootstrap.min.css" rel="stylesheet">-->
+  <!-- Includes FontAwesome -->
+  <!--<link rel="stylesheet" href="../../assets/stylesheets/font-awesome.min.css" />-->
 
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
   <!--<link rel="stylesheet" href="../../assets/stylesheets/bootstrap-responsive.min.css" />-->
@@ -109,11 +111,6 @@
                           <a class="description" href="#"> <%= link_to product.description, product %></a>
                         </div>
 
-                          <div class="caption">
-                            <p><strike>Euro 150,00</strike>&nbsp;Euro 100,00</p>
-                            <a class="btn btn-primary" href="#">View</a>
-                            <a class="btn btn-success" href="#">Add to Cart</a>
-                          </div>
                         </div>
                 <% end %>
 
@@ -126,11 +123,6 @@
                       <div class="thumbnail">
                         <%= image_tag instagram.images.standard_resolution.url %>
 
-                        <div class="caption">
-                          <p><strike>Euro 150,00</strike>&nbsp;Euro 100,00</p>
-                          <a class="btn btn-primary" href="#">View</a>
-                          <a class="btn btn-success" href="#">Add to Cart</a>
-                        </div>
                       </div>
                 <% end %>
 
