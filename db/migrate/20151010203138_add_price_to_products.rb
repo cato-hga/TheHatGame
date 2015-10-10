@@ -4,3 +4,4 @@ class AddPriceToProducts < ActiveRecord::Migration
     add_column :products, :active, :boolean
   end
 end
+
