@@ -65,5 +65,6 @@ gem 'pg'
 # instagram
 gem 'instagram'
 
-
+# faker gem
+gem 'faker'
 
