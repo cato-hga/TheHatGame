@@ -4,11 +4,12 @@
 #
 #  id             :integer          not null, primary key
 #  product_number :integer
-#  price          :integer
 #  product_photo  :string
 #  description    :text
 #  created_at     :datetime
 #  updated_at     :datetime
+#  price          :decimal(12, 3)
+#  active         :boolean
 #
 
 class Product < ActiveRecord::Base
