@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010214408) do
+ActiveRecord::Schema.define(version: 20151019013419) do
 
   create_table "order_items", force: :cascade do |t|
     t.integer  "product_id"
@@ -50,8 +50,8 @@ ActiveRecord::Schema.define(version: 20151010214408) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "active"
     t.decimal  "price",          precision: 12, scale: 3
+    t.boolean  "active"
   end
 
   create_table "users", force: :cascade do |t|
