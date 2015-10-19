@@ -16,5 +16,9 @@ class Product < ActiveRecord::Base
   attr_accessor :product_photo, :product_photo_cache
   mount_uploader :product_photo, ProductPhotoUploader
 
+  has_many :order_items
+
+  default_scope {where(active: true)}
+
 
 end
