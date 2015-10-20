@@ -2,8 +2,7 @@ class SessionsController < ApplicationController
   # before_action :authenticate_session!
 
   def index
-    @product = Product.all
-
+    @product = Product.page(params[:page]).per(5)
     @instagram = ::Instagram.user_recent_media(496631234, {:count => 3})
   end
 
