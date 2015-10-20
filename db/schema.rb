@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20151019015619) do
-=======
 ActiveRecord::Schema.define(version: 20151019013419) do
->>>>>>> origin/master
 
   create_table "order_items", force: :cascade do |t|
     t.integer  "product_id"
