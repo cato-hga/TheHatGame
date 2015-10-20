@@ -4,12 +4,9 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.page(params[:page]).per(16)
+    @products = Product.page(params[:page]).per(5)
     @order_item = current_order.order_items.new
-    
-
     @instagram = ::Instagram.user_recent_media(496631234, {:count => 3})
-
   end
 
   # GET /products/1
