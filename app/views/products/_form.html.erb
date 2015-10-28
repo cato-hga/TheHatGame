@@ -1,25 +1,29 @@
 <%= form_for(@product, :product_photo => {:multipart => true} ) do |f| %>
-  <% if @product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+    <% if @product.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
-      <ul>
-      <% @product.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% @product.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="actions">
+      <label>  Upload A Photo </label>
+      <%=	image_tag(@product.product_photo.url) if @product.product_photo?  %>
+      <%= f.file_field :product_photo %>
+      <%= f.hidden_field :product_photo_cache %>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.label :photo	  %>
-    <%=	image_tag(@product.product_photo.url) if @product.product_photo?  %>
-    <%= f.file_field :product_photo %>
-    <%= f.hidden_field :product_photo_cache %>
-  </div>
-    <div class="field">
-      <%= f.label :description %><br>
-      <%= f.text_field :description %>
+    <div class="field" >
+      <label> Insert A URL </label><br>
+      <%= f.text_field :remote_product_photo_url %>
+    </div>
+      <div class="field">
+        <%= f.label :description %><br>
+        <%= f.text_field :description %>
     </div>
     <div class="field">
       <label>Item # </label><br>
@@ -30,7 +34,7 @@
       <%= f.number_field :price %>
     </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>

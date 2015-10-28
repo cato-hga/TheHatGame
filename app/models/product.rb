@@ -13,7 +13,7 @@
 #
 
 class Product < ActiveRecord::Base
-  attr_accessor :product_photo, :product_photo_cache
+  attr_accessor :product_photo, :product_photo_cache, :remote_product_photo_url, :remove_product_photo
   mount_uploader :product_photo, ProductPhotoUploader
 
   has_many :order_items
