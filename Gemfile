@@ -71,3 +71,5 @@ gem 'instagram'
 # faker gem
 gem 'faker'
 
+# heroku
+gem 'rails_12factor'
