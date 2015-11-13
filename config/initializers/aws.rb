@@ -1,10 +1,4 @@
 CarrierWave.configure do |config|
-  #
-  # config.storage    = :aws
-  # config.aws_bucket = ENV.fetch('S3_BUCKET')
-  # config.aws_acl    = 'public-read'
-  # config.asset_host = 'https://s3.amazonaws.com'
-
 
   config.storage    = :aws
   config.aws_bucket = 'thehatgame'
