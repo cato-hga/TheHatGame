@@ -97,7 +97,7 @@
 
                     <li class="span3">
                       <div class="thumbnail">
-
+                        <%= link_to image_tag(product.product_photo.url(:home)), product %>
                         <div class="label">
                           <div class="price">
                             $<%= product.price %>0
