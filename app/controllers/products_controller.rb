@@ -12,7 +12,8 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @product = Product.find_by(params[:id])
+    @product = Product.find_by({params =>[:id]} )
+    # @order_items = current_order.order_items
   end
 
   # GET /products/new
@@ -72,6 +73,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:price, :product_photo, :description, :photo, :product_number, :product_photo, :product_photo_cache, {product_photo: []} )
+      params.require(:product).permit(:price, :description, :photo, :product_number, :product_photo, :product_photo_cache,
+:remote_product_photo_url, :remove_product_photo, {product_photo: []}, :page )
     end
 end
